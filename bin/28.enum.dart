@@ -1,7 +1,8 @@
 enum Day { monday, tuesday, wednesday, thursday, friday }
 
+// Enum in Dart is a special data type that defines a fixed set of constant values.
 void main(List<String> args) {
-  Day day = Day.monday;
+  Day day = Day.friday;
   switch (day) {
     case Day.monday:
       print("this is monday");

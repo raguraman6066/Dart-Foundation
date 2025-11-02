@@ -1,10 +1,10 @@
 import 'package:dartpro/inherlib.dart';
 
 void main(List<String> args) {
-  Person p = Person("guest", 55);
-  Person p2 = Person.age30("hari");
-  p.personInfo();
-  p2.personInfo();
+  // Person p = Person("guest", 55);
+  // Person p2 = Person.age30("hari");
+  // p.personInfo();
+  // p2.personInfo();
   // p.personInfo();
   // Employee e = Employee();
   // e.name = "karan";
@@ -13,5 +13,6 @@ void main(List<String> args) {
   // e.employeeInfo();
   Employee e = Employee("working", "jonny", 44);
   e.employeeInfo();
+  // e.personInfo();
   // print(Employee.empno);
 }
