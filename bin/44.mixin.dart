@@ -69,3 +69,26 @@ void main() {
 Mixins let you reuse code from multiple classes without inheritance.
 Dart does not support multiple inheritance directly — meaning a class cannot extend from more than one class.
 ✅ But you can achieve Multiple Inheritance using mixins or implements*/
+
+
+
+/*
+class Animal {
+  void move() {
+    print("மிருகம் நகருது");
+  }
+}
+
+mixin Fly on Animal {//this mixin is on animal..so animal subclasses only allow to use this mixin
+  void fly() {
+    move(); // ✅ ஏன்னா Animal class-ல move() இருக்குது
+    print("பறக்குது");
+  }
+}
+
+class Bird extends Animal with Fly {}
+
+void main() {
+  Bird().fly();
+}
+*/

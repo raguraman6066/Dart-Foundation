@@ -10,6 +10,7 @@
 //isolates- achieving concurrency(parallel execution)
 void main(List<String> args) async {
   print("line1"); //sync
+  getMes().then((value) => print(value));
   Future(() => print("line 2 by future")); //event queue
   await getMessage();
   print("line2"); //sync
@@ -51,3 +52,33 @@ Future<num> divide(num n1, num n2) {
     return Future.value(n1 ~/ n2);
   }
 }
+///example
+///
+/*void main(List<String> args) {
+  fun1();
+  fun2();
+  fun3();
+}
+
+fun1() {
+  print("fun1");
+}
+
+fun2() async {
+  print("fun2");//sync
+  await Future.delayed(Duration(seconds: 1), () => print("fun2.1"));
+  print("fun2.2");
+}
+
+fun3() {
+  print("fun3");
+}
+
+
+output:
+fun1
+fun2
+fun3
+fun2.1
+fun2.2
+*/
